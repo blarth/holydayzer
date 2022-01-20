@@ -14,7 +14,7 @@ app.use(cors());
 function checkHoliday(holidays){
     for(let i= 0; i < holidays.length; i++){
         if(holidays[i].date.includes(today.toLocaleDateString()) ){
-           return "Sim, hoje é nome-do-feriado"
+           return `Sim, hoje é feriado ${holidays[i].name}`
             
         }
     }
